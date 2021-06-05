@@ -1,0 +1,72 @@
+.container {
+    align-items: center;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    .header & {
+        display: flex;
+        justify-content: space-between;
+        height: 80px;
+    }
+
+    .hero & {
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .advantage & {
+        display: flex;
+        flex-direction: column;
+        padding-top: 60px;
+        padding-bottom: 30px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .team & {
+        padding-top: 60px;
+        padding-bottom: 94px;
+        text-align: center;
+    }
+
+    .clients & {
+        padding-top: 60px;
+        padding-bottom: 94px;
+        text-align: center;
+    }
+
+    .footer & {
+        display: flex;
+        flex-direction: column;
+        padding: 60px 15px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .nav & {
+        width: auto;
+        margin: 0 auto;
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 1200px;
+
+        .hero & {
+            height: auto;
+        }
+
+        .footer & {
+            flex-direction: row;
+            justify-content: space-between;
+            width: 1200px;
+            align-items: flex-start;
+        }
+    }
+}

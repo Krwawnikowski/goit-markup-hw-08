@@ -1,0 +1,70 @@
+.advantage {
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+
+    &__item {
+        margin-bottom: 30px;
+    }
+
+    &__icon-wrapper {
+        text-align: center;
+        background: #F5F4FA;
+        border-radius: 4px;
+    }
+
+    &__header {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.143;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: $secondary-color;
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    &__description {
+        font-size: 14px;
+        line-height: 1.714;
+        letter-spacing: 0.03em;
+        color: $third-color;
+        padding-top: 10px;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 1199px) {
+    .advantage {
+        margin-left: -15px;
+
+        &__list {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        &__item {
+            flex-basis: calc(100% / 2 - 15px);
+            margin-left: 15px;
+        }
+    }
+}
+
+
+@media screen and (min-width: 1200px) {
+
+    .advantage {
+
+        &__list {
+            flex-direction: row;
+            flex-wrap: nowrap;
+        }
+
+        &__item:not(:last-child) {
+            margin-right: 30px;
+        }
+    }
+}
